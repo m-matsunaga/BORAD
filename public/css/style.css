@@ -1,0 +1,454 @@
+header{
+  /* background-color: #00ced1; */
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 5px double black;
+  text-align: center;
+}
+
+a{
+  text-decoration: none;
+}
+
+/* header */
+.logo{
+  /* color: white; */
+  color: black;
+}
+
+.a-logo{
+  display: block;
+  height: 45px;
+}
+
+h1{
+  padding-left: 50px;
+  padding-top: 16px;
+  display: flex;
+}
+
+.page-title{
+  font-weight: normal;
+  font-size: 1.2rem;
+  margin-left: 30px;
+  margin-top: 10px;
+  /* color: white; */
+  color: black;
+}
+
+.a-logout{
+  display: block;
+  background-color: black;
+  color: white;
+  padding: 8px;
+  border-radius: 5px;
+  width: 160px;
+}
+
+.logout{
+  padding-top: 20px;
+  padding-right: 75px;
+}
+
+/* layout */
+#container{
+    display: flex;
+    flex-flow: row wrap;
+    height: 100vh
+}
+
+#main{
+  flex: 0 0 79%;
+}
+
+#side{
+  flex: 0 0 20%;
+  border-left: 2px solid black;
+}
+
+/* sidebar */
+.side-contents{
+  text-align: center;
+}
+
+.side-button{
+  padding-top: 20px;
+}
+
+.side-button:nth-child(1){
+  padding-top: 30px;
+}
+
+.a-category{
+  display: block;
+  background-color: #708090;
+  color: white;
+  padding: 8px ;
+  width: 160px;
+  border-radius: 5px;
+  margin: 0 auto;
+}
+
+.a-posts{
+  display: block;
+  background-color: #00ced1;
+  color: white;
+  padding: 8px ;
+  width: 160px;
+  border-radius: 5px;
+  margin: 0 auto;
+}
+
+/* new post */
+#post-container{
+  height: 100vh
+}
+
+.post-content{
+  margin: 0 auto;
+  width: 300px;
+  padding-top: 40px;
+}
+
+.post-input{
+  width: 300px;
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 16px;
+  background-color: #f5f5f5;
+}
+
+.post-area{
+  background-color: #f5f5f5;
+  width: 300px;
+  margin-bottom: 16px;
+}
+
+.post-done{
+  display: block;
+  background-color: #00ced1;
+  color: white;
+  padding: 8px;
+  border-radius: 5px;
+  width: 160px;
+  margin: 0 auto;
+}
+
+/* category */
+#category-container{
+  display: flex;
+  flex-flow: row wrap;
+  height: 100vh
+}
+
+#category-layout{
+  flex: 0 0 52%;
+}
+
+#category-lineUp{
+  flex: 0 0 48%;
+}
+
+.category-form{
+  width: 300px;
+  padding-top: 80px;
+  float: right;
+}
+
+.main-category{
+  margin-bottom: 50px;
+}
+
+ul{
+  list-style:none
+}
+
+.side-category{
+  margin: 0 auto;
+  padding-top: 30px;
+  padding-left: 20px;
+  width: 90%;
+}
+
+.category-title{
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-bottom: 12px;
+}
+
+.category-ul{
+  margin-bottom: 1px;
+}
+
+.main-category-li {
+  border: 1px solid #708090;
+  padding: 3px;
+  cursor: pointer;
+}
+
+.add-main-category-li{
+  border: 1px solid #708090;
+  padding: 3px;
+  cursor: pointer;
+  position: relative;
+}
+
+.main-category-li-span{
+  float: right;
+}
+
+.sub-category-ul{
+  display: none;
+}
+
+.add-sub-category-ul{
+  display: none;
+}
+
+.sub-category-ul.active{
+  display: block;
+}
+
+.add-sub-category-ul.active{
+  display: block;
+}
+
+.sub-category-li .add-sub-category-li{
+  padding: 3px;
+  color: black;
+}
+
+.sub-category-li-a{
+  color: black;
+}
+
+.add-category-lineUP{
+  width: 360px;
+  padding-top: 80px;
+  padding-left: 80px;
+}
+
+.add-category-title{
+  margin-bottom: 20px;
+}
+
+.delete-sub-category-a{
+  background-color: #db7093;
+  color: white;
+  padding: 2px;
+  margin-left: 10px;
+}
+
+.delete-main-category-a{
+  background-color: #db7093;
+  color: white;
+  margin-left: 10px;
+  position: absolute;
+  width: 40px;
+  text-align: center;
+}
+
+/* post　共通 */
+.post-container{
+  padding-top: 30px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.post{
+    margin-bottom: 20px;
+    border: 1px solid black;
+    padding: 20px 50px;
+}
+
+.post-1{
+  display: flex;
+  justify-content: space-between;
+}
+
+.post-2{
+  display: flex;
+  padding: 20px 0px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  justify-content: space-between;
+}
+
+.post-title{
+  color: black;
+  display: inline-block;
+}
+
+.post-3{
+  display: flex;
+  justify-content: space-between;
+}
+
+.post-4{
+  margin-bottom: 20px;
+}
+
+.post-count{
+  display: flex;
+}
+
+.post-count-content{
+  margin-left: 10px;
+}
+
+.post-heart{
+  margin-left: 5px;
+}
+
+.post-sub-category{
+  background-color: #00ced1;
+  padding: 2px 5px;
+  border-radius: 5px;
+  color: white;
+}
+
+/* post detail */
+#post-detail-container{
+  display: flex;
+  flex-flow: row wrap;
+  height: 100vh
+}
+
+#post-detail-left{
+  flex: 0 0 56%;
+}
+
+#post-detail-right{
+  flex: 0 0 43%;
+}
+
+.detail-post{
+    margin-bottom: 20px;
+    border: 1px solid black;
+    padding: 20px 50px;
+}
+
+.detail-post-position{
+  padding-top: 50px;
+  padding-left: 100px;
+}
+
+.post-edit-button{
+  display: inline;
+  background-color: #db7093;
+  padding: 2px 5px;
+  border-radius: 5px;
+  color: white;
+  font-weight: normal;
+}
+
+.detail-post-comment{
+    margin-bottom: 20px;
+    border-bottom: 1px solid black;
+    padding: 20px 50px 40px 50px;
+}
+
+.comment-name-at{
+  display: flex;
+}
+
+.comment-name{
+  margin-right: 10px;
+}
+
+.post-comment-3{
+  float: right;
+  display: flex;
+}
+
+.post-comment-2{
+  font-weight: nomal;
+  margin-top: 12px;
+}
+
+.comment{
+  font-size: 1.2rem;
+  margin: 24px 0px;
+}
+
+.comment-form-position{
+  padding-top: 50px;
+  padding-left: 100px;
+}
+
+.comment-form{
+  width: 420px;
+}
+.comment-area{
+  background-color: #f5f5f5;
+  padding: 8px;
+  margin-bottom: 16px;
+  width: 420px;
+}
+
+.comment-done{
+  display: block;
+  background-color: #00ced1;
+  color: white;
+  padding: 8px;
+  border-radius: 5px;
+  width: 100px;
+  float: right;
+}
+
+/* edit */
+.back-link{
+  height: 30px;
+  display: inline;
+  background-color: #d3d3d3;
+  color: white;
+  text-align: center;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+.back-to-detail{
+  text-align: center;
+  margin-top: 20px;
+}
+
+.post-delete{
+  display: inline-block;
+  background-color: #708090;
+  color: white;
+  padding: 8px;
+  border-radius: 5px;
+  width: 160px;
+  text-align: center;
+}
+
+.detail-position{
+  text-align: center;
+  margin-top: 0px;
+}
+
+/* search */
+.search-button{
+  background-color: #00ced1;
+  padding: 5px;
+  color: white;
+  border-radius: 5px;
+}
+
+.search{
+  margin-top: 20px;
+}
+
+.search-form{
+  background-color: #f5f5f5;
+  padding: 3px;
+}
+
+/* いいね */
+.heart{
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}

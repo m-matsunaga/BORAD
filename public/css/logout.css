@@ -1,0 +1,87 @@
+header{
+  width: 100%;
+  text-align: center;
+  padding-top: 100px;
+}
+
+a{
+  text-decoration: none;
+  color: #00ced1;
+}
+
+#container{
+  width: 100%;
+}
+
+.login-contents{
+  margin: 0 auto;
+  width: 240px;
+  padding-top: 50px;
+}
+
+input{
+  background-color: #f5f5f5;
+  width: 240px;
+  float: right;
+}
+
+.form{
+  margin-bottom: 50px;
+}
+
+.submit{
+  background-color: #00ced1;
+  padding: 4px 8px;
+  font-size: 0.9rem;
+  border-radius: 5px;
+  color: white;
+  margin: 30px 0px;
+  float: right;
+}
+
+.to-register{
+  margin-top: 150px;
+  text-align: center;
+}
+
+.add-done{
+  text-align: center;
+  padding-top: 240px;
+  margin-bottom: 30px;
+}
+
+.add-text{
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.add-button{
+  background-color: #00ced1;
+  width: 160px;
+  text-align: center;
+  border-radius: 5px;
+  margin: 0 auto;
+}
+
+.add-login{
+  display: block;
+  color: white;
+  width: 100%;
+  padding: 4px 8px;
+}
+
+.register-toLogin{
+  text-align: center;
+}
+
+.login-link{
+  height: 30px;
+  display: block;
+  background-color: #d3d3d3;
+  color: white;
+  border-radius: 5px;
+  width: 120px;
+  margin-top: 135px;
+  font-size: 0.9rem;
+  margin-left: 58px;
+}
