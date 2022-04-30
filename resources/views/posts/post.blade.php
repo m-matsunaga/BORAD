@@ -20,11 +20,15 @@
     </div>
     @endif
       <label for="sub">Sub Category</label>
+<!-- // -->
       <select class="post-input input" id="category-id" name="sub">
-          @foreach ($subCategories as $subCategory)
-              <option value="{{ $subCategory->id }}">{{ $subCategory->sub_category }}
-              </option>
-          @endforeach
+        @foreach ($categories as $category)
+          <optgroup label="{{ $category->main_category }}">
+            @foreach ($category->PostSubCategory as $post_sub_category)
+            <option value="{{$post_sub_category->id}}">{{ $post_sub_category->sub_category }}</option>
+            @endforeach
+          </optgroup>
+        @endforeach
       </select>
     <div class="post-form">
       {{ Form::label('Title') }}
